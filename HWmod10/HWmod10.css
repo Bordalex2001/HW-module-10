@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 18px;
+    padding: 50px;
+}
+.grid-container > div{
+    border: 5px solid #2121f3;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+}
+.pic:nth-child(1){
+    grid-column: span 2;
+}
+.pic:nth-child(3){
+    grid-row: span 2;
+}
+.pic:nth-child(5){
+    grid-column: 2 / span 2;
+}
+.pic:nth-child(6){
+    grid-column: span 4;
+}
